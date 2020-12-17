@@ -36,7 +36,6 @@ function startQuestions() {
 }
 
 function lowerCase() {
-  debugger;
   var lwcse = "abcdefghijklmnopqrstuvwxyz";
   var lwCaseQ = confirm("Do you want to include lowercase characters?");
   if (lwCaseQ == true) {
@@ -49,7 +48,6 @@ function lowerCase() {
 
 
 function upperCase() {
-  debugger;
   var upcse = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var upCaseQ = confirm("Do you want to include uppercase characters?");
   if (upCaseQ == true) {
@@ -61,7 +59,6 @@ function upperCase() {
 }
 
 function numberGen() {
-    debugger;
   var nums = "0123456789";
   var numQ = confirm("Do you want to include numbers?");
   if (numQ == true) {
@@ -73,7 +70,6 @@ function numberGen() {
 }
 
 function specialChar() {
-  debugger;
   var spcChar = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
   var spcCharQ = confirm("Do you want to include special characters?");
   if (spcCharQ == true) {
