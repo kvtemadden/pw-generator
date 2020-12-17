@@ -5,6 +5,8 @@ var pwEl = document.querySelector("#password");
 
 // Write password to the #password input
 function writePassword() {
+  password = "";
+  pwEl.value = password;
   generatePassword();
   pwEl.value = password;
 
