@@ -87,7 +87,6 @@ function resetQuestions() {
 
 //This adds random characters to make the rest of the password length up.
 function showPassword() {
-  debugger;
   numChar = parseInt(numChar, 10);
   while (numChar !== password.length) {
     for (var x = 0; x < 1; x++) {
@@ -100,6 +99,7 @@ function showPassword() {
   pwEl.value = password;
 }
 
+//Copies password to clipboard when user clicks the "copy to clipboard" button.
 function copyPW() {
   var copyText = document.getElementById("password");
   copyText.select();
