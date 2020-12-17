@@ -15,7 +15,6 @@ function writePassword() {
   password = "";
   pwEl.value = password;
   generatePassword();
-  // pwEl.value = password;
   showPassword();
   userString = "";
 }
