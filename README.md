@@ -13,7 +13,7 @@ Section | Description
 [Licence](#licence) | Licence for the source code
 
 ## Screenshot
-![Screenshot of working password generator](Develop/Screenshot_of_working_password_generator.PNG)
+![Screenshot of working password generator](/Assets/Screenshot_of_working_password_generator.PNG)
 
 You can access the site via [this link](https://kvtemadden.github.io/pw-generator/)
 
