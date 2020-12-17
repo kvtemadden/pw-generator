@@ -29,12 +29,14 @@ function generatePassword() {
   if (numChar >= 8 && numChar <= 128) {
     startQuestions();
   }
+  //otherwise, if the user picks outside of the range 8-128, display this message and start again.
   else {
     alert("Your password must be between 8 and 128 characters only.");
     generatePassword();
   }
 }
 
+// List of if statements based on the user's preferences for a password, asks if they want to include x and then includes/ignores based on their decision.
 function startQuestions() {
   lwCaseQ = confirm("Do you want to include lowercase characters?");
   if (lwCaseQ == true) {
@@ -54,6 +56,7 @@ function startQuestions() {
   }
 }
 
+//Functions which run if the user chooses they want to include lowercase, uppcase, special characters or numbers in their password. This adds those characters to the password.
 function lowerCase() {
   var lwcse = "abcdefghijklmnopqrstuvwxyz";
   userString += lwcse;
@@ -91,6 +94,7 @@ function specialChar() {
   }
 }
 
+//Resets the user's choices so if they click the generate button it'll run again as a fresh slate
 function resetQuestions() {
   lwCaseQ = false;
   upCaseQ = false;
@@ -98,6 +102,7 @@ function resetQuestions() {
   spcCharQ = false;
 }
 
+//This adds random characters to make the rest of the password length up.
 function showPassword() {
   debugger;
   numChar = parseInt(numChar, 10);
@@ -108,5 +113,6 @@ function showPassword() {
       x += 1;
     }
   }
+  //Prints the password value on the page in the main box.
   pwEl.value = password;
 }
