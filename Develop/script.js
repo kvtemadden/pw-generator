@@ -6,7 +6,6 @@ var lwCaseQ = false;
 var upCaseQ = false;
 var numQ = false;
 var spcCharQ = false;
-var trueCount = 0;
 var numChar = 0;
 var userString = "";
 
@@ -40,22 +39,18 @@ function startQuestions() {
   lwCaseQ = confirm("Do you want to include lowercase characters?");
   if (lwCaseQ == true) {
     lowerCase();
-    trueCount += 2;
   }
   upCaseQ = confirm("Do you want to include uppercase characters?");
   if (upCaseQ == true) {
     upperCase();
-    trueCount += 2;
   }
   numQ = confirm("Do you want to include numbers?");
   if (numQ == true) {
     numberGen();
-    trueCount += 2;
   }
   var spcCharQ = confirm("Do you want to include special characters?");
   if (spcCharQ == true) {
     specialChar();
-    trueCount += 2;
   }
 }
 
