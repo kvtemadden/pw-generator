@@ -59,38 +59,22 @@ function startQuestions() {
 function lowerCase() {
   var lwcse = "abcdefghijklmnopqrstuvwxyz";
   userString += lwcse;
-  for (var x = 0; x < 2; x++) {
-    var i = Math.floor(Math.random() * lwcse.length);
-    password += lwcse.charAt(i);
-  }
 }
 
 
 function upperCase() {
   var upcse = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   userString += upcse;
-  for (var x = 0; x < 2; x++) {
-    var i = Math.floor(Math.random() * upcse.length);
-    password += upcse.charAt(i);
-  }
 }
 
 function numberGen() {
   var nums = "0123456789";
   userString += nums;
-  for (var x = 0; x < 2; x++) {
-    var i = Math.floor(Math.random() * nums.length);
-    password += nums.charAt(i);
-  }
 }
 
 function specialChar() {
   var spcChar = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
   userString += spcChar;
-  for (var x = 0; x < 2; x++) {
-    var i = Math.floor(Math.random() * spcChar.length);
-    password += spcChar.charAt(i);
-  }
 }
 
 //Resets the user's choices so if they click the generate button it'll run again as a fresh slate
